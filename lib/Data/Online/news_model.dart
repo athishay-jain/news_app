@@ -9,8 +9,8 @@ class SourceModel {
 
   factory SourceModel.fromJson(Map<String, dynamic> json) {
     return SourceModel(
-      id: json["id"],
-      name: json["name"],
+      id: json["id"] ?? "",
+      name: json["name"]?? "",
     );
   }
 }
@@ -39,13 +39,13 @@ class ArticlesModel {
   factory ArticlesModel.fromJson(Map<String, dynamic> json) {
     return ArticlesModel(
       source: SourceModel.fromJson(json["source"]),
-      author: json['author'],
-      content: json['content'],
-      description: json['description'],
-      publishedAt: json['publishedAt'],
-      title: json['title'],
-      url: json['url'],
-      urlToImage: json['urlToImage'],
+      author: json['author']?? "",
+      content: json['content'] ?? "",
+      description: json['description']?? "",
+      publishedAt: json['publishedAt']?? "",
+      title: json['title']?? "",
+      url: json['url']?? "",
+      urlToImage: json['urlToImage']?? "",
     );
   }
 }
