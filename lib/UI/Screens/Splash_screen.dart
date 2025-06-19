@@ -2,7 +2,6 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:news_app/UI/Screens/DashBaord.dart';
-import 'package:news_app/UI/Screens/HomePage.dart';
 
 class SplashScreen extends StatefulWidget{
   @override
